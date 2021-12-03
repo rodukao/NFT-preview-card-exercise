@@ -23,6 +23,8 @@ body{
     min-height: 500px;
     border-radius:20px;
     box-shadow: 0 0 60px 0px rgba(0,0,0,0.6);
+    padding-bottom:25px;
+    position: relative;
 }
 
 .feature-image{
@@ -31,8 +33,36 @@ body{
     border-radius:10px;
 }
 
+.image-overlay{
+    width:300px;
+    height:300px;
+    margin:25px;
+    border-radius:10px;
+    background-color:rgba(0, 255, 248, .7);
+    opacity: 0;
+    top:0;
+    position:absolute;
+    transition:all .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.image-overlay:hover{
+    opacity: 1;
+}
+
 .card-title{
     color:white;
+    margin:0 0 0 25px;
+    font-size:22px;
+    transition: all .2s;
+    cursor:pointer;
+}
+
+.card-title:hover{
+    color:rgba(0, 255, 248, 1);
     margin:0 0 0 25px;
     font-size:22px;
 }
@@ -40,6 +70,8 @@ body{
 .card-description{
     color:hsl(215,51%,70%);
     margin:20px 25px;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .price-time-holder{
@@ -47,6 +79,8 @@ body{
     margin-left:25px;
     display: flex;
     flex-grow: 1;
+    border-bottom: 1px solid #2F415B;
+    padding: 0 0 20px 0;
 }
 
 .price{
@@ -66,4 +100,30 @@ body{
 .time-left span{
     color:hsl(215,51%,70%);
     margin-left:10px;
+}
+
+.author{
+    margin:20px 0 0 25px;
+}
+
+.author img{
+    max-width:31px;
+    vertical-align: middle;
+    border:1px solid white;
+    border-radius:16px;
+}
+
+.author-span{
+    color:hsl(215,51%,70%);
+    margin-left:20px;
+}
+
+.author-name{
+    color:white;
+    cursor:pointer;
+    transition:all .2s;
+}
+
+.author-name:hover{
+    color:rgba(0, 255, 248, 1);
 }
