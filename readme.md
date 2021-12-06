@@ -1,1 +1,1 @@
-#A sample HTML exercise from FrontEnd Mentor website
+#A sample HTML exercise from Frontend Mentor website
