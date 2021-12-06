@@ -12,15 +12,15 @@ body{
 .container{
     height:100vh;
     display: flex;
+    width:100%;
     justify-content: center;
     align-items: center;
 }
 
 .card{
     background-color:hsl(216, 50%, 16%);
-    width: 90%;
+    width: 100%;
     max-width: 350px;
-    min-height: 500px;
     border-radius:20px;
     box-shadow: 0 0 60px 0px rgba(0,0,0,0.6);
     padding-bottom:25px;
@@ -127,3 +127,17 @@ body{
 .author-name:hover{
     color:rgba(0, 255, 248, 1);
 }
+
+@media only screen and (max-width: 350px) {
+    .card{
+        max-width: 320px;
+    }
+
+    .feature-image{
+        width:270px;
+    }
+
+    .price-time-holder{
+        width:270px;
+    }
+  }
